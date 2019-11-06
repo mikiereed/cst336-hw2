@@ -29,7 +29,11 @@ success {
 }
 
 table {
-    align: center;
     text-align: center;
     border: 2px black;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
 }

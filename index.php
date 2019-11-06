@@ -16,14 +16,14 @@
         <h3 id="validationFdbk" class="danger"></h3>
         <button id="shootButton">Shoot!</button>
         <br><br>
-        <table>
+        <table class="center">
           <tr>
             <td>You</td>
             <td>Computer</td>
           </tr>
           <tr>
-            <td><img src="img/blank.png"></img></td>
-            <td><img src="img/blank.png"></img></td>
+            <td><img src="img/blank.png" id="userPicture"></img></td>
+            <td><img src="img/blank.png" id="computerPicture"></img></td>
           </tr>
         </table>
         <h2 id="outcome"></h2>
@@ -34,7 +34,7 @@
             CST336 Internet Programming.
             <br />
             2019&copy; mikie Reed <br />
-            <img src="img/csumb_logo.png" alt="CSUMB Logo" />
+            CSUMB
         </footer>
     </body>
 </html>
