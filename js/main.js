@@ -81,7 +81,7 @@ $(document).ready(function() {
           function presentOutcome(outcome) {
             if (outcome == "tie") {
               $("#outcome").html(outcome.toUpperCase());
-              $("#outcome").css("color", "rgb(0, 0, 0)");
+              $("#outcome").css("color", "rgb(255, 255, 255)");
               $("#outcomeMessage").html("");
             } else if (outcome == "user") {
               $("#outcome").html("You WON!!!");

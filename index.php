@@ -14,7 +14,7 @@
         <h3>Rock, Paper, or Scissors?</h3>
         <input type="text" id="userMove">
         <h3 id="validationFdbk" class="danger"></h3>
-        <button id="shootButton">Shoot!</button>
+        <button id="shootButton" type="reset">Shoot!</button>
         <br><br>
         <table class="center">
           <tr>
