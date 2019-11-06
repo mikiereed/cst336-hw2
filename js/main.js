@@ -7,6 +7,20 @@ $(document).ready(function() {
           $("#shootButton").on("click", playGame);
           
           //functions
+          function playGame() {
+            let userMove = $("#userMove").val().toLowerCase();
+            $("#validationFdbk").html(""); //resets validation feedback
+            if (!isPlayValid(userMove)) {
+              return;
+            }
+            setPicture("user", userMove);
+            let computerMove = getComputerMove();
+            setPicture("computer", computerMove);
+            let outcome = getOutcome(userMove, computerMove);
+            presentOutcome(outcome);
+            $("#userMove").attr("value", ""); //resets input box
+          }
+          
           function isPlayValid(userMove) {
             let isValid = true;
             if (userMove !== "rock" && userMove !== "paper" &&
@@ -64,17 +78,19 @@ $(document).ready(function() {
             }
           }
           
-          function playGame() {
-            let userMove = $("#userMove").val().toLowerCase();
-            $("#validationFdbk").html(""); //resets validation feedback
-            if (!isPlayValid(userMove)) {
-              return;
+          function presentOutcome(outcome) {
+            if (outcome == "tie") {
+              $("#outcome").html(outcome.toUpperCase());
+              $("#outcome").css("color", "rgb(0, 0, 0)");
+              $("#outcomeMessage").html("");
+            } else if (outcome == "user") {
+              $("#outcome").html("You WON!!!");
+              $("#outcome").css("color", "rgb(0, 255, 0)");
+              $("#outcomeMessage").html("Great Job!");
+            } else if (outcome == "computer") {
+              $("#outcome").html("You LOST!!!");
+              $("#outcome").css("color", "rgb(255, 0, 0)");
+              $("#outcomeMessage").html("");
             }
-            setPicture("user", userMove);
-            let computerMove = getComputerMove();
-            setPicture("computer", computerMove);
-            let outcome = getOutcome(userMove, computerMove);
-            $("#userMove").value(""); //resets input box
           }
-          
         })//ready
