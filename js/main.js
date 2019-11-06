@@ -65,7 +65,7 @@ $(document).ready(function() {
           }
           
           function playGame() {
-            let userMove = $("#usersMove").val().toLowerCase();
+            let userMove = $("#userMove").val().toLowerCase();
             $("#validationFdbk").html(""); //resets validation feedback
             if (!isPlayValid(userMove)) {
               return;
@@ -74,8 +74,7 @@ $(document).ready(function() {
             let computerMove = getComputerMove();
             setPicture("computer", computerMove);
             let outcome = getOutcome(userMove, computerMove);
-            alert(outcome);
-            $("#usersMove").value(""); //resets usersMove
+            $("#userMove").value(""); //resets input box
           }
           
         })//ready
