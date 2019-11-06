@@ -9,7 +9,7 @@ $(document).ready(function() {
           //functions
           function isPlayValid(userMove) {
             let isValid = true;
-            if (userMove !== "rock" || userMove !== "paper" ||
+            if (userMove !== "rock" && userMove !== "paper" &&
               userMove !== "scissors") {
               isValid = false;
               $("#validationFdbk").html("Please play rock, paper, or scissors only...");
