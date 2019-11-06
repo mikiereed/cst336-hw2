@@ -8,11 +8,10 @@ $(document).ready(function() {
           
           //functions
           function isPlayValid(userMove) {
-            let isValid = false;
-            alert(userMove);
+            let isValid = true;
             if (userMove !== "rock" || userMove !== "paper" ||
               userMove !== "scissors") {
-              isValid = true;
+              isValid = false;
               $("#validationFdbk").html("Please play rock, paper, or scissors only...");
             }
               return isValid;
@@ -24,6 +23,7 @@ $(document).ready(function() {
           
           function getComputerMove() {
             let randomNumber = Math.Floor(Math.random() * 10) % 3; //number between 0-2
+            alert(randomNumber);
             switch (randomNumber) {
               case 0:
                 return "rock";
