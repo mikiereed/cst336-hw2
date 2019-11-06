@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(0, 40, 255);
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    text-align: center;
+}
+
+#danger {
+    color: red;
+}
+
+footer {
+    
+}
+
+h3 {
+    
+}
+
+.mainHeading {
+    font-size: 3em;
+    font-weight: bold;
+    border: 3px gray groove;
+}
+
+success {
+    color: green;
+}
