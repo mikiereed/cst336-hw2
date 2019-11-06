@@ -40,7 +40,7 @@ $(document).ready(function() {
           function playGame() {
             let userMove = $("#usersMove").val().toLowerCase();
             $("#validationFdbk").html(""); //resets validation feedback
-            if (!isFormValid(userMove)) {
+            if (!isPlayValid(userMove)) {
               return;
             }
             setPicture("user", userMove);
