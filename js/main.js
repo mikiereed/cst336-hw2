@@ -22,7 +22,8 @@ $(document).ready(function() {
           }
           
           function getComputerMove() {
-            let randomNumber = Math.Floor(Math.random() * 10) % 3; //number between 0-2
+            alert("im here");
+            let randomNumber = (Math.floor(Math.random() * 10)) % 3; //number between 0-2
             alert(randomNumber);
             switch (randomNumber) {
               case 0:
