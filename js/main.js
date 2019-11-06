@@ -1,8 +1,4 @@
 $(document).ready(function() {
-          //global variables
-          //var WINS = localStorage.getItem("wins");
-          //var ATTEMPTS = localStorage.getItem("total_attempts");
-          
           //event listeners
           $("#shootButton").on("click", playGame);
           
@@ -18,7 +14,6 @@ $(document).ready(function() {
             setPicture("computer", computerMove);
             let outcome = getOutcome(userMove, computerMove);
             presentOutcome(outcome);
-            $("#userMove").val() = ""; //reset input box
           }
           
           function isPlayValid(userMove) {

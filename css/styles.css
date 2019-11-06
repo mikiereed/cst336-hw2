@@ -7,14 +7,20 @@ body {
 
 .danger {
     color: red;
+    font-weight: bolder;
 }
 
 footer {
-    
+    font-family: serif;
+    font-size: .75em;
 }
 
 h3 {
-    
+    font-weight: bold;
+}
+
+img {
+    border: 5px black groove;
 }
 
 #mainHeading {
@@ -25,11 +31,13 @@ h3 {
 
 success {
     color: green;
+    text-size: 1.5em;
 }
 
 table {
     text-align: center;
-    border: 2px black;
+    border: 4px black;
+    font-family: sans-serif;
 }
 
 table.center {
