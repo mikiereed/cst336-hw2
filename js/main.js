@@ -8,11 +8,11 @@ $(document).ready(function() {
           
           //functions
           function isFormValid() {
-            let isValid = true;
+            let isValid = false;
             let input = $("#usersMove").val().toLowerCase();
-            if (input !== "rock" || input !== "paper" ||
-              input !== "scissors") {
-              isValid = false;
+            if (input == "rock" || input == "paper" ||
+              input == "scissors") {
+              isValid = true;
               $("#validationFdbk").html("Please play rock, paper, or scissors only...");
             }
               return isValid;

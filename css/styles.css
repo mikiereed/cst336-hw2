@@ -3,9 +3,10 @@ body {
     color: rgb(0, 0, 0);
     font-family: cursive;
     text-align: center;
+    color: white;
 }
 
-#danger {
+.danger {
     color: red;
 }
 
@@ -17,7 +18,7 @@ h3 {
     
 }
 
-.mainHeading {
+#mainHeading {
     font-size: 3em;
     font-weight: bold;
     border: 3px gray groove;
@@ -25,4 +26,10 @@ h3 {
 
 success {
     color: green;
+}
+
+table {
+    align: center;
+    text-align: center;
+    border: 2px black;
 }

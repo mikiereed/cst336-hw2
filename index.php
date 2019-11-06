@@ -28,5 +28,13 @@
         </table>
         <h2 id="outcome"></h2>
         <h3 id="outcomeMessage"></h3>
+        <br></br>
+        <footer>
+            <hr>
+            CST336 Internet Programming.
+            <br />
+            2019&copy; mikie Reed <br />
+            <img src="img/csumb_logo.png" alt="CSUMB Logo" />
+        </footer>
     </body>
 </html>
