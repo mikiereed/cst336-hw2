@@ -18,7 +18,7 @@ $(document).ready(function() {
             setPicture("computer", computerMove);
             let outcome = getOutcome(userMove, computerMove);
             presentOutcome(outcome);
-            $("#userMove").attr("value", ""); //resets input box
+            $("#userMove").val() = ""; //reset input box
           }
           
           function isPlayValid(userMove) {
