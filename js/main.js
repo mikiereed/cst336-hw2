@@ -22,9 +22,7 @@ $(document).ready(function() {
           }
           
           function getComputerMove() {
-            alert("im here");
             let randomNumber = (Math.floor(Math.random() * 10)) % 3; //number between 0-2
-            alert(randomNumber);
             switch (randomNumber) {
               case 0:
                 return "rock";
