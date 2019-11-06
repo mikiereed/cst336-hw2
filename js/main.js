@@ -36,6 +36,34 @@ $(document).ready(function() {
             }
           }
           
+          function getOutcome(userMove, computerMove) {
+            if (userMove == computerMove)
+            {
+              return "tie";
+            }
+            if (userMove == "rock") {
+              if (computerMove == "paper") {
+                return "computer";
+              } else if (computerMove == "scissors") {
+                return "user";
+              }
+            }
+            if (userMove == "paper") {
+              if (computerMove == "scissors") {
+                return "computer";
+              } else if (computerMove == "rock") {
+                return "user";
+              }
+            }
+            if (userMove == "scissors") {
+              if (computerMove == "rock") {
+                return "computer";
+              } else if (computerMove == "paper") {
+                return "user";
+              }
+            }
+          }
+          
           function playGame() {
             let userMove = $("#usersMove").val().toLowerCase();
             $("#validationFdbk").html(""); //resets validation feedback
@@ -45,8 +73,9 @@ $(document).ready(function() {
             setPicture("user", userMove);
             let computerMove = getComputerMove();
             setPicture("computer", computerMove);
-            //let userWon = decideWinner(userMove, computerMove);
-            $("#usersMove").html(""); //resets usersMove
+            let outcome = getOutcome(userMove, computerMove);
+            alert(outcome);
+            $("#usersMove").value(""); //resets usersMove
           }
           
         })//ready
